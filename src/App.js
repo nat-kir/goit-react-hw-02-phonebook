@@ -42,7 +42,7 @@ class App extends Component {
     }
 
     if (
-      contacts.find(contact => {
+      contacts.some(contact => {
         return number === contact.number;
       })
     ) {
@@ -88,5 +88,3 @@ class App extends Component {
 }
 
 export default App;
-
-//
